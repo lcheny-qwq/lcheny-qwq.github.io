@@ -38,3 +38,6 @@ jobs:
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
+
+      #发布到github pages
+      - uses: actions/deploy-pages@v2
