@@ -32,6 +32,6 @@ jobs:
       - run: npm run build
 
       # 推送到gh-pages分支
-      - uses: actions/JamesIves/github-pages-deploy-action@v4
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
