@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,12 +25,12 @@ jobs:
       # 安装node环境
       - uses: actions/setup-node@v3
         with:
-        node-version: latest
-      
+        node-version: "latest"
+
       # 安装依赖&打包
       - run: npm ci
       - run: npm run build
-      
+
       # 推送到gh-pages分支
       - uses: actions/JamesIves/github-pages-deploy-action@v4
         with:
