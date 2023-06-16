@@ -25,7 +25,7 @@ jobs:
       # 安装node环境
       - uses: actions/setup-node@v3
         with:
-        node-version: "latest"
+          node-version: "latest"
 
       # 安装依赖&打包
       - run: npm ci
